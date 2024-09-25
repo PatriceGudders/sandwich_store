@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+/*VARIABELEN*/
+:root {
+    --hoofdkleur: #e28743;
+    --bijkleur: #eab676;
+    --achtergrondkleur: #154a73;
+    --textshadow: 1px 1px 0 rgb(80, 78, 78),
+    -1px -1px 0 rgb(80, 78, 78),
+    1px -1px 0 rgb(80, 78, 78),
+    -1px 1px 0 rgb(80, 78, 78);
+}
+
+
+/*ACHTERGRONDEN*/
+
+#bodyBestel {
+    background-image: url(../assets/imgBestel.jpg);
+    background-size: cover;
+}
+
+#bodyOverzicht {
+    background-image: url(../assets/imgOverzicht.jpg);
+    background-size: cover ;
+}
+
+#bodyInlog {
+    background-image: url(../assets/imgInlog.jpg);
+    background-size: cover;
+}
+
+/*Verwijder alle margins en paddings by default*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Chicle', serif;
+    font-size: 1.4rem;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%;
+    border-radius: 4px;
+
+}
+
+.scroller {
+    max-height: 500px;
+    overflow: auto;
+}
+
+form {
+    width: 40%;
+}
+
+h1 {
+    color: var(--hoofdkleur);
+    font-family: 'Chicle', serif;
+    font-weight: 1;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    text-shadow: var(--textshadow);
+}
+
+h2 {
+    color: var(--hoofdkleur);
+    font-family: 'Chicle', serif;
+    font-size: 1.5rem;
+    width: 100%;
+    text-shadow: var(--textshadow);
+}
+
+p,
+label,
+td,
+tr,
+th {
+    color: var(--hoofdkleur);
+    font-family: 'Chicle', serif;
+    font-size: 1.4rem;
+}
+
+label {
+    text-shadow: var(--textshadow);
+}
+
+td,
+th {
+    padding: 1rem;
+    outline: 1px solid var(--bijkleur);
+    margin: 0;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--hoofdkleur);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+form input[type=submit] {
+    background-color: var(--hoofdkleur);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    font-family: 'Chicle', serif;
+    font-size: 1rem;
+    width: 30%;
+}
+
+form input[type=submit]:hover {
+    background-color:  var(--hoofdkleur);
+}
+
+select {
+    color: var(--hoofdkleur);
+    font-family: 'Chicle', serif;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#broodjesInfo tbody tr {
+    transition: background-color 200ms;
+}
+
+#broodjesInfo tbody tr:hover {
+    background-color: var(--achtergrondkleur);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ebebeb;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #cecece;
+}
+
+thead {
+    background-color: var(--achtergrondkleur);
+}
+
+#feedback {
+    align-items: flex-end;
+    width: 100%;
+    margin: 0 5% 0 5%;
+    text-align: center;
+}
